@@ -1,0 +1,9 @@
+<h3> Owners:
+</h3>
+
+<ul>
+    <li *ngFor="let owner of owners; let i = index;">
+        {{owner.nombre}} {{owner.apellidos}} - {{owner.ciudad}} -> 
+    </li>
+</ul>
+<a routerLink="/owners-add" routerLinkActive="active"> Add Owner</a>
